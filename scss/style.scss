@@ -16,15 +16,81 @@
 //positions
 .abs{position: absolute;}
 .rel{position: relative;}
+.poem{
+	color: rgb(200,200,200);
+	font-family:Tangerine;
+	font-size:100px;
+	z-index: 40;
+	background:rgba(0,0,0,1);
+	padding:15px 20px;
+	border:1px solid white;
+}
+.poem:hover{cursor:pointer;}
+
+.words{
+	height:100%;
+	z-index:100;
+}
+
+#beginning{
+	height:100vh;
+	background: black;
+
+	//title
+	#title{
+		color: rgb(200,200,200);
+		font-size: 100px;
+		font-family: "Open Sans", sans-serif;
+		text-align: center;
+		top: 20%;
+	}
+	hr{
+		margin: 0 auto;
+		margin-top: 10px;
+		border:0;
+		border-top:2px solid rgb(200,200,200);
+		width: 70%;
+
+	}
+}
 
 #space{
 	height:500vh;
 	@include gradient(#000000, #1a1a1a);
 
-	#stars{width:100%;}
+	//star field
+	#starfield{
+		background:url(../pics/space/star_field2.png);
+		background-repeat: repeat-y;
+		width:100%;
+		height: 100%;
+		z-index: 5;
+		top: 0;
+		left: 0;
+
+	}
+
+	//stars
+	.stars{
+		width:100%;
+		z-index: 20;
+		// top: 0;
+		// left: 0;
+	}
 }
 
 #sky{
 	height:500vh;
+	z-index:20;
 	@include gradient(#1a1a1a, #002e57);
+}
+
+#lower_sky{
+	height:500vh;
+	@include gradient(#002e57, #0088ff);
+}
+
+#lowest_sky{
+	height:500vh;
+	@include gradient(#0088ff, #99cfff);
 }

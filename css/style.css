@@ -8,6 +8,38 @@
 .rel {
   position: relative; }
 
+.poem {
+  color: #c8c8c8;
+  font-family: Tangerine;
+  font-size: 100px;
+  z-index: 40;
+  background: black;
+  padding: 15px 20px;
+  border: 1px solid white; }
+
+.poem:hover {
+  cursor: pointer; }
+
+.words {
+  height: 100%;
+  z-index: 100; }
+
+#beginning {
+  height: 100vh;
+  background: black; }
+  #beginning #title {
+    color: #c8c8c8;
+    font-size: 100px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    top: 20%; }
+  #beginning hr {
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 0;
+    border-top: 2px solid #c8c8c8;
+    width: 70%; }
+
 #space {
   height: 500vh;
   background: -moz-linear-gradient(top, #000000 0%, #1a1a1a 100%);
@@ -17,15 +49,45 @@
   background: -ms-linear-gradient(top, #000000 0%, #1a1a1a 100%);
   background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }
-  #space #stars {
-    width: 100%; }
+  #space #starfield {
+    background: url(../pics/space/star_field2.png);
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0; }
+  #space .stars {
+    width: 100%;
+    z-index: 20; }
 
 #sky {
   height: 500vh;
+  z-index: 20;
   background: -moz-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #1a1a1a), color-stop(100%, #002e57));
   background: -webkit-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
   background: -o-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
   background: -ms-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
   background: linear-gradient(to bottom, #1a1a1a 0%, #002e57 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }
+
+#lower_sky {
+  height: 500vh;
+  background: -moz-linear-gradient(top, #002e57 0%, #0088ff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #002e57), color-stop(100%, #0088ff));
+  background: -webkit-linear-gradient(top, #002e57 0%, #0088ff 100%);
+  background: -o-linear-gradient(top, #002e57 0%, #0088ff 100%);
+  background: -ms-linear-gradient(top, #002e57 0%, #0088ff 100%);
+  background: linear-gradient(to bottom, #002e57 0%, #0088ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }
+
+#lowest_sky {
+  height: 500vh;
+  background: -moz-linear-gradient(top, #0088ff 0%, #99cfff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #0088ff), color-stop(100%, #99cfff));
+  background: -webkit-linear-gradient(top, #0088ff 0%, #99cfff 100%);
+  background: -o-linear-gradient(top, #0088ff 0%, #99cfff 100%);
+  background: -ms-linear-gradient(top, #0088ff 0%, #99cfff 100%);
+  background: linear-gradient(to bottom, #0088ff 0%, #99cfff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }

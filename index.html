@@ -3,21 +3,84 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Art Poem Experiment</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Tangerine' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/function.js"></script>
 </head>
 <body>
 	<div id="wrap">
+
 		<!-- start -->
-		<div id="space">
-			<img src="pics/space/star_effect.png" alt="" id="stars" class="rel">
-			<img src="pics/space/star_effect.png" alt="" id="stars" class="rel">
+		<div id="beginning">
+			<div id="title" class="rel">Temp Title<hr></div>
 		</div>
+
+		<hr>
+
+		<!-- space -->
+		<div id="space">
+			<!-- starfield -->
+			<div id="starfield" class="rel">
+				<img src="pics/space/star_effect.png" alt="" class="rel stars">
+				<img src="pics/space/star_effect.png" alt="" class="rel stars">
+				<img src="pics/space/star_effect.png" alt="" class="rel stars">
+			</div>
+			<div class="rel words" style="top:-500vh;">
+				<!-- text -->
+			<span class="abs poem" style="top:10%;">When I look at the sky, what do I see?</span>
+			<br>
+			<span class="abs poem" style="top:30%;right:0;">Lights, like angels on high.</span>
+			<br>
+			<span class="abs poem" style="top:34%;right:0;">Stars, like celestial guides.</span>
+			<br>
+			<span class="abs poem" style="top:38%;right:0;">Lights, like wishes and dreams.</span>
+			<span class="abs poem" style="top:70%;">When I look at the sky, all I see...</span>
+			<span class="abs poem" style="top:77%;right:0;">...is a bright future for you and me.</span>
+			<span class="abs poem" style="top:105%;left:auto;right:auto;">...but...</span>
+			<span class="abs poem"></span>
+			</div>
+		</div>
+		
+		<hr>
 
 		<div id="sky"></div>
 
+		<hr>
+
+		<div id="lower_sky"></div>
+
+		<hr>
+
+		<div id="lowest_sky"></div>
+
 		<!-- end -->
 	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			//
+			function alias(original, new_name){
+		$(".poem").hover(
+			function(){
+				if($(this).text()===original){
+					//changes the text
+					$(this).text(new_name);
+				}
+			},
+			function(){
+				if($(this).text()===new_name){
+					//restores the text
+					$(this).text(original);
+				}
+			}
+		);
+	}
+
+		alias("...but...", "test")
+			//
+		})
+	</script>
+
 </body>
 </html>
