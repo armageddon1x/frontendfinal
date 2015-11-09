@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background: blue;
+			margin:10px;
+		}
+		.box:nth-of-type(1){
+			transform:scale(4,2);
+		}
+		.box:nth-of-type(2){
+			transform:translate(25px,50px);
+		}
+		.box:nth-of-type(3){
+			transform:rotate(30deg);
+		}
+
+		.box:nth-of-type(4){
+			transform: skewY(60deg);
+		}
+		.box:nth-of-type(5){
+			transform: rotateX(60deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>

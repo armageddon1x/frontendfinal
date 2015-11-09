@@ -16,6 +16,18 @@
 //positions
 .abs{position: absolute;}
 .rel{position: relative;}
+
+#info {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}
+
+//class for poem style
 .poem{
 	color: rgb(200,200,200);
 	font-family:Tangerine;
@@ -27,11 +39,51 @@
 }
 .poem:hover{cursor:pointer;}
 
+//poem lines
+//first stanza
+#s1v1{top:10%;}
+#s1v2{top:30%;right:0;}
+#s1v3{top:34%;right:0;}
+#s1v4{top:38%;right:0;}
+#s1v5{top:70%;}
+#s1v6{top:77%;right:0;}
+#s1v7{top:95%;left:auto;right:auto;}
+
+//second stanza
+#s2v1{top:10%;}
+#s2v2{top:20%;}
+#s2v3{top:25%;}
+#s2v4{top:50%;}
+#s2v5{top:55%;}
+#s2v6{top:70%;}
+#s2v7{top:75%;}
+#s2v8{top:80%;}
+
+//third stanza
+#s3v1{top:10%;}
+#s3v2{top:20%;}
+#s3v3{top:30%;}
+#s3v4{top:40%;}
+#s3v5{top:50%;}
+#s3v6{top:60%;}
+#s3v7{top:70%;}
+
+//fourth stanza
+#s4v1{}
+#s4v2{}
+#s4v3{}
+#s4v4{}
+#s4v5{}
+#s4v6{}
+#s4v7{}
+
+//class for poem verse container
 .words{
 	height:100%;
 	z-index:100;
 }
 
+//heading
 #beginning{
 	height:100vh;
 	background: black;
@@ -67,15 +119,12 @@
 		z-index: 5;
 		top: 0;
 		left: 0;
-
 	}
 
 	//stars
 	.stars{
 		width:100%;
 		z-index: 20;
-		// top: 0;
-		// left: 0;
 	}
 }
 
@@ -83,6 +132,13 @@
 	height:500vh;
 	z-index:20;
 	@include gradient(#1a1a1a, #002e57);
+}
+
+#rain{
+	background-image:url(../pics/sky/rain.png);
+	height:200vh;
+	width:100%;
+	top:300vh;
 }
 
 #lower_sky{

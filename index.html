@@ -13,42 +13,120 @@
 
 		<!-- start -->
 		<div id="beginning">
-			<div id="title" class="rel">Temp Title<hr></div>
+			<div id="title" class="rel">
+				<div id="info">0</div>
+				Temp Title<hr></div>
 		</div>
 
-		<hr>
+		<!-- <hr> -->
 
 		<!-- space -->
 		<div id="space">
+			<!-- <hr class="rel" style="border:2px solid purple;top:100vh;z-index:500px;">
+			<hr class="rel" style="border:2px solid purple;top:200vh;z-index:500px;">
+			<hr class="rel" style="border:2px solid purple;top:300vh;z-index:500px;">
+			<hr class="rel" style="border:2px solid purple;top:400vh;z-index:500px;">
+			<hr class="rel" style="border:2px solid purple;top:500vh;z-index:500px;"> -->
 			<!-- starfield -->
 			<div id="starfield" class="rel">
-				<img src="pics/space/star_effect.png" alt="" class="rel stars">
-				<img src="pics/space/star_effect.png" alt="" class="rel stars">
-				<img src="pics/space/star_effect.png" alt="" class="rel stars">
+				<img src="pics/space/star_effect.png" alt="" class="rel stars"
+					data-bottom-top="top: 200vh;"
+					data-top-bottom="top: -100vh;"
+				>
+				<img src="pics/space/star_effect.png" alt="" class="rel stars"
+					data-bottom-top="top: 0vh;"
+					data-top-bottom="top: -300vh;"
+				>
+				<div
+					data-bottom-top="top: 400vh;left:0%;"
+					data-top-bottom="top: 350vh;left:150%;"
+				style="width:200px;height:200px;background:white;position:absolute;"></div>
 			</div>
 			<div class="rel words" style="top:-500vh;">
 				<!-- text -->
-			<span class="abs poem" style="top:10%;">When I look at the sky, what do I see?</span>
-			<br>
-			<span class="abs poem" style="top:30%;right:0;">Lights, like angels on high.</span>
-			<br>
-			<span class="abs poem" style="top:34%;right:0;">Stars, like celestial guides.</span>
-			<br>
-			<span class="abs poem" style="top:38%;right:0;">Lights, like wishes and dreams.</span>
-			<span class="abs poem" style="top:70%;">When I look at the sky, all I see...</span>
-			<span class="abs poem" style="top:77%;right:0;">...is a bright future for you and me.</span>
-			<span class="abs poem" style="top:105%;left:auto;right:auto;">...but...</span>
-			<span class="abs poem"></span>
+			<p class="abs poem" id="s1v1"
+				data-bottom-top="opacity:.4;"
+				data-center-top="opacity:1;"
+				data-top-top="opacity:.4;"
+				></p><br>
+			<p class="abs poem" id="s1v2"></p><br>
+			<p class="abs poem" id="s1v3"></p><br>
+			<p class="abs poem" id="s1v4"></p>
+			<p class="abs poem" id="s1v5"></p>
+			<p class="abs poem" id="s1v6"></p>
+			<p class="abs poem" id="s1v7"
+				data-bottom-top="opacity:0;"
+				data-center-top="opacity:0;"
+				data-top-top="opacity:1;"
+				></p>
 			</div>
 		</div>
-		
+
+		<div id="sky">
+		<!-- 	<div>
+				<img class="abs" src="pics/sky/sun.png"
+					style="z-index:200px;"
+					data-bottom-top="right:0%;"
+					data-bottom-bottom="top: 1000vh;right:0%;"
+					data-top-bottom="top: 600vh;right:50%;"
+					>
+					<img class="abs" src="pics/sky/clouds.png"
+					style="width:100%;"
+					data-bottom-bottom="top:1000vh;"
+					data-top-bottom="top:600vh;"
+					>
+			</div> -->
+	
+			<div class="rel" style:"top:0vh;">
+				<img class="abs" src="pics/sky/sun.png"
+					style="z-index:200px;"
+					data-bottom-top="right:0%;"
+					data-bottom-bottom="top: 600vh;right:0%;"
+					data-top-bottom="top: 0vh;right:50%;"
+					>
+					<img class="abs" src="pics/sky/clouds.png"
+					style="width:100%;"
+					data-bottom-bottom="top:400vh;"
+					data-top-bottom="top:0vh;"
+					>
+					
+					<div class="abs" id="rain"
+					data-bottom-top="top:500vh;"
+					data-top-bottom="top: 100vh;"
+					>
+						<img class="abs" src="pics/sky/raindrops.png" style="width:100%;height:100%;"
+					
+						
+						>
+					</div>
+					
+			</div>
+
+			<div class="rel words" style="top:0vh">
+				<p class="abs poem" id="s2v1"></p>
+				<p class="abs poem" id="s2v2"></p>
+				<p class="abs poem" id="s2v3"></p>
+				<p class="abs poem" id="s2v4"></p>
+				<p class="abs poem" id="s2v5"></p>
+				<p class="abs poem" id="s2v6"></p>
+				<p class="abs poem" id="s2v7"></p>
+			</div>
+		</div>
+
 		<hr>
 
-		<div id="sky"></div>
-
-		<hr>
-
-		<div id="lower_sky"></div>
+		<div id="lower_sky">
+			<div class="rel words" style="top:500vh">
+				<p class="abs poem" id="s3v1"></p>
+				<p class="abs poem" id="s3v2"></p>
+				<p class="abs poem" id="s3v3"></p>
+				<p class="abs poem" id="s3v4"></p>
+				<p class="abs poem" id="s3v5"></p>
+				<p class="abs poem" id="s3v6"></p>
+				<p class="abs poem" id="s3v7"></p>
+				<p class="abs poem" id="s3v8"></p>
+			</div>
+		</div>
 
 		<hr>
 
@@ -57,30 +135,17 @@
 		<!-- end -->
 	</div>
 
-	<script type="text/javascript">
-		$(function(){
-			//
-			function alias(original, new_name){
-		$(".poem").hover(
-			function(){
-				if($(this).text()===original){
-					//changes the text
-					$(this).text(new_name);
-				}
-			},
-			function(){
-				if($(this).text()===new_name){
-					//restores the text
-					$(this).text(original);
-				}
-			}
-		);
+	<script src="js/skrollr.js"></script>
+	<script>
+			$(function(){
+				var s = skrollr.init({
+	render: function(data) {
+	  //Log the current scroll position.
+	  $('#info').text(data.curTop);
 	}
-
-		alias("...but...", "test")
-			//
-		})
+});
+			})
 	</script>
-
+	
 </body>
 </html>
