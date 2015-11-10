@@ -15,7 +15,7 @@
 		<div id="beginning">
 			<div id="title" class="rel">
 				<div id="info">0</div>
-				Temp Title<hr></div>
+				Nebula<hr></div>
 		</div>
 
 		<!-- <hr> -->
@@ -29,11 +29,11 @@
 			<hr class="rel" style="border:2px solid purple;top:500vh;z-index:500px;"> -->
 			<!-- starfield -->
 			<div id="starfield" class="rel">
-				<img src="pics/space/star_effect.png" alt="" class="rel stars"
+				<img src="pics/space/star_effect.png" class="rel stars"
 					data-bottom-top="top: 200vh;"
 					data-top-bottom="top: -100vh;"
 				>
-				<img src="pics/space/star_effect.png" alt="" class="rel stars"
+				<img src="pics/space/star_effect.png" class="rel stars"
 					data-bottom-top="top: 0vh;"
 					data-top-bottom="top: -300vh;"
 				>
@@ -63,19 +63,6 @@
 		</div>
 
 		<div id="sky">
-		<!-- 	<div>
-				<img class="abs" src="pics/sky/sun.png"
-					style="z-index:200px;"
-					data-bottom-top="right:0%;"
-					data-bottom-bottom="top: 1000vh;right:0%;"
-					data-top-bottom="top: 600vh;right:50%;"
-					>
-					<img class="abs" src="pics/sky/clouds.png"
-					style="width:100%;"
-					data-bottom-bottom="top:1000vh;"
-					data-top-bottom="top:600vh;"
-					>
-			</div> -->
 	
 			<div class="rel" style:"top:0vh;">
 				<img class="abs" src="pics/sky/sun.png"
@@ -89,15 +76,35 @@
 					data-bottom-bottom="top:400vh;"
 					data-top-bottom="top:0vh;"
 					>
+
+					<div class="abs" style="background:black;height:250vh;width:100%;top:200vh;"
 					
+					data-5200="opacity:0;"
+					data-5450="opacity:1;"
+					data-5800="opacity:.7;"
+					data-5900="opacity:0;"
+					>
+						<img src="pics/sky/moon.png">
+					</div>
+					
+					<div class="abs"style="width:100%;height:200vh;top:150vh;z-index:500;"
+						data-0="opacity:0;"
+						data-6300="opacity:0;transform:translateY(0vh);"
+						data-6320="opacity:1;"
+						data-6450="transform:translateY(200vh);"
+						data-6550="transform:translateY(100vh);"
+						data-6570="transform:translateY(150vh);"
+						data-6600="transform:translateY(200vh);"
+						data-6700="transform:translateY(400vh);opacity:0;"
+					>
+						<img class="abs" src="pics/sky/raindrops.png" style="width:100%;height:100%;">
+					</div>
+
 					<div class="abs" id="rain"
 					data-bottom-top="top:500vh;"
 					data-top-bottom="top: 100vh;"
 					>
-						<img class="abs" src="pics/sky/raindrops.png" style="width:100%;height:100%;"
-					
 						
-						>
 					</div>
 					
 			</div>
@@ -110,13 +117,14 @@
 				<p class="abs poem" id="s2v5"></p>
 				<p class="abs poem" id="s2v6"></p>
 				<p class="abs poem" id="s2v7"></p>
+				<p class="abs poem" id="s2v8"></p>
 			</div>
 		</div>
 
 		<hr>
 
 		<div id="lower_sky">
-			<div class="rel words" style="top:500vh">
+			<div class="rel words" style="top:0vh">
 				<p class="abs poem" id="s3v1"></p>
 				<p class="abs poem" id="s3v2"></p>
 				<p class="abs poem" id="s3v3"></p>
@@ -125,12 +133,26 @@
 				<p class="abs poem" id="s3v6"></p>
 				<p class="abs poem" id="s3v7"></p>
 				<p class="abs poem" id="s3v8"></p>
+				<p class="abs poem" id="s3v9"></p>
+				<p class="abs poem" id="s3v10"></p>
 			</div>
 		</div>
 
 		<hr>
 
-		<div id="lowest_sky"></div>
+		<div id="lowest_sky">
+			<div class="rel words" style="top:0vh">
+				<p class="abs poem" id="s4v1"></p>
+				<p class="abs poem" id="s4v2"></p>
+				<p class="abs poem" id="s4v3"></p>
+				<p class="abs poem" id="s4v4"></p>
+				<p class="abs poem" id="s4v5"></p>
+				<p class="abs poem" id="s4v6"></p>
+				<p class="abs poem" id="s4v7"></p>
+				<p class="abs poem" id="s4v8"></p>
+				<p class="abs poem" id="s4v9"></p>
+			</div>
+		</div>
 
 		<!-- end -->
 	</div>
@@ -139,11 +161,11 @@
 	<script>
 			$(function(){
 				var s = skrollr.init({
-	render: function(data) {
-	  //Log the current scroll position.
-	  $('#info').text(data.curTop);
-	}
-});
+				render: function(data) {
+				  //Log the current scroll position.
+				  $('#info').text(data.curTop);
+					}
+				});
 			})
 	</script>
 	

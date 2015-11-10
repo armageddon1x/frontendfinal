@@ -20,7 +20,6 @@
 .poem {
   color: #c8c8c8;
   font-family: Tangerine;
-  font-size: 100px;
   z-index: 40;
   background: black;
   padding: 15px 20px;
@@ -78,7 +77,7 @@
   top: 75%; }
 
 #s2v8 {
-  top: 80%; }
+  top: 85%; }
 
 #s3v1 {
   top: 10%; }
@@ -101,6 +100,42 @@
 #s3v7 {
   top: 70%; }
 
+#s3v8 {
+  top: 85%; }
+
+#s3v9 {
+  top: 90%; }
+
+#s3v10 {
+  top: 95%; }
+
+#s4v1 {
+  top: 10%; }
+
+#s4v2 {
+  top: 20%; }
+
+#s4v3 {
+  top: 30%; }
+
+#s4v4 {
+  top: 40%; }
+
+#s4v5 {
+  top: 50%; }
+
+#s4v6 {
+  top: 60%; }
+
+#s4v7 {
+  top: 70%; }
+
+#s4v8 {
+  top: 80%; }
+
+#s4v9 {
+  top: 90%; }
+
 .words {
   height: 100%;
   z-index: 100; }
@@ -119,7 +154,7 @@
     margin-top: 10px;
     border: 0;
     border-top: 2px solid #c8c8c8;
-    width: 70%; }
+    width: 50%; }
 
 #space {
   height: 500vh;
@@ -155,9 +190,9 @@
 
 #rain {
   background-image: url(../pics/sky/rain.png);
-  height: 200vh;
+  height: 300vh;
   width: 100%;
-  top: 300vh; }
+  top: 250vh; }
 
 #lower_sky {
   height: 500vh;

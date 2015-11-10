@@ -1,7 +1,10 @@
 $(function(){
 			//
 
+			//**************************************************************
 			//poem
+
+			//stanza 1
 			var s1={
 				v1:"When I look at the sky, what do I see?",
 				//v1c:"this is a test",
@@ -13,6 +16,7 @@ $(function(){
 				v7:"...but..."
 			};
 
+			//stanza 2
 			var s2={
 				v1:"When you left, it felt like the world ended for me.",
 				//v1c:""
@@ -25,31 +29,22 @@ $(function(){
 				v8:"as if the sky was crying with me"
 			};
 
+			//stanza 3
 			var s3={
 				v1:"How could you leave?",
 				v2:"We were so happy but now…",
 				v3:"there is only sadness.",
 				v4:"The springtime flowers are in full bloom",
 				v5:"yet all I can see is the dread of winter.",
-				v6:"",
-				v7:"",
-				v8:"",
-				v9:"",
+				v6:"I am full of anger,",
+				v7:"I am full of negative emotion,",
+				v8:"but ultimately, in the end,",
+				v9:"I am devastated, because I do not understand",
+				v10:"why you are no longer here."
 			};
 
+			//stanza 4
 			var s4={
-				v1:"",
-				v2:"",
-				v3:"",
-				v4:"",
-				v5:"",
-				v6:"",
-				v7:"",
-				v8:"",
-				v9:"",
-			};
-
-			var s5={
 				v1:"But I still love you, now and forever",
 				v2:"no matter the time",
 				v3:"no matter the place",
@@ -57,35 +52,31 @@ $(function(){
 				v5:"and in my memories I leave you flowers",
 				v6:"all I can say is that I wish for you the best",
 				v7:"and one day I hope to be with you again",
-				v8:"",
+				v8:"...",
 				v9:"RIP",
 			};
 
-			
-
+			//**************************************************************
 			//functions
-			function alias(original, new_name){
+
+			//outputs verse into corresponding section
+			function write($ID, verse){$ID.html(verse);};
+
+			//replaces original text with alternate text and back again on hover/hover off
+			function alias(orig, alt){
 				$(".poem").hover(
 					function(){
 						//this checks if the html of the page matches the input of the function
-						if($(this).text()===original){
-							//changes the text
-							$(this).text(new_name);
-						}
+						if($(this).text()===orig){$(this).text(alt);/*changes the text*/};
 					},
 					function(){
-						
-						if($(this).text()===new_name){
-							//restores the text
-							$(this).text(original);
-						}
+						if($(this).text()===alt){$(this).text(orig);/*restores the text*/};
 					}
 				);
 			};
 
-			function write($ID, verse){
-				$ID.html(verse);
-			}
+			//**************************************************************
+			//function calls
 
 			//write poems to page
 			write($("#s1v1"),s1.v1);
@@ -103,6 +94,7 @@ $(function(){
 			write($("#s2v5"),s2.v5);
 			write($("#s2v6"),s2.v6);
 			write($("#s2v7"),s2.v7);
+			write($("#s2v8"),s2.v8)
 
 			write($("#s3v1"),s3.v1);
 			write($("#s3v2"),s3.v2);
@@ -111,6 +103,19 @@ $(function(){
 			write($("#s3v5"),s3.v5);
 			write($("#s3v6"),s3.v6);
 			write($("#s3v7"),s3.v7);
+			write($("#s3v8"),s3.v8);
+			write($("#s3v9"),s3.v9);
+			write($("#s3v10"),s3.v10);
+
+			write($("#s4v1"),s4.v1);
+			write($("#s4v2"),s4.v2);
+			write($("#s4v3"),s4.v3);
+			write($("#s4v4"),s4.v4);
+			write($("#s4v5"),s4.v5);
+			write($("#s4v6"),s4.v6);
+			write($("#s4v7"),s4.v7);
+			write($("#s4v8"),s4.v8);
+			write($("#s4v9"),s4.v9);
 
 			//calling alias
 			alias("...but...", "text text");

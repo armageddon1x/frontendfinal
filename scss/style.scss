@@ -31,7 +31,7 @@
 .poem{
 	color: rgb(200,200,200);
 	font-family:Tangerine;
-	font-size:100px;
+	// font-size:100px;
 	z-index: 40;
 	background:rgba(0,0,0,1);
 	padding:15px 20px;
@@ -57,7 +57,7 @@
 #s2v5{top:55%;}
 #s2v6{top:70%;}
 #s2v7{top:75%;}
-#s2v8{top:80%;}
+#s2v8{top:85%;}
 
 //third stanza
 #s3v1{top:10%;}
@@ -67,15 +67,20 @@
 #s3v5{top:50%;}
 #s3v6{top:60%;}
 #s3v7{top:70%;}
+#s3v8{top:85%;}
+#s3v9{top:90%;}
+#s3v10{top:95%;}
 
 //fourth stanza
-#s4v1{}
-#s4v2{}
-#s4v3{}
-#s4v4{}
-#s4v5{}
-#s4v6{}
-#s4v7{}
+#s4v1{top:10%;}
+#s4v2{top:20%;}
+#s4v3{top:30%;}
+#s4v4{top:40%;}
+#s4v5{top:50%;}
+#s4v6{top:60%;}
+#s4v7{top:70%;}
+#s4v8{top:80%;}
+#s4v9{top:90%;}
 
 //class for poem verse container
 .words{
@@ -101,7 +106,7 @@
 		margin-top: 10px;
 		border:0;
 		border-top:2px solid rgb(200,200,200);
-		width: 70%;
+		width: 50%;
 
 	}
 }
@@ -136,9 +141,9 @@
 
 #rain{
 	background-image:url(../pics/sky/rain.png);
-	height:200vh;
+	height:300vh;
 	width:100%;
-	top:300vh;
+	top:250vh;
 }
 
 #lower_sky{
