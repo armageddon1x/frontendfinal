@@ -1,5 +1,5 @@
 $(function(){
-			//
+			//start
 
 			//**************************************************************
 			//poem
@@ -7,18 +7,24 @@ $(function(){
 			//stanza 1
 			var s1={
 				v1:"When I look at the sky, what do I see?",
-				//v1c:"this is a test",
+				v1c:"Cuando miro al cielo, que es lo que veo?",
 				v2:"Lights, like angels on high.",
+				v2c:"Luceros, como angeles en lo alto.",
 				v3:"Stars, like celestial guides.",
+				v3c:"Estrellas, como guias celestiales",
 				v4:"Lights, like wishes and dreams.",
+				v4c:"Luceros, como deseos y suenos",
 				v5:"When I look at the sky, all I see...",
+				v5c:"Cuando miro al cielo, solo lo que veo...",
 				v6:"...is a bright future for you and me.",
-				v7:"...but..."
+				v6c:"...es un futuro brillante para ti y para me.",
+				v7:"...but...",
+				v37:"...pero..."
 			};
 
 			//stanza 2
 			var s2={
-				v1:"When you left, it felt like the world ended for me.",
+				v1:"When you left, it felt like the world ended.",
 				//v1c:""
 				v2:"Even though the sun still rose,",
 				v3:"and the clouds still flowed,",
@@ -36,11 +42,11 @@ $(function(){
 				v3:"there is only sadness.",
 				v4:"The springtime flowers are in full bloom",
 				v5:"yet all I can see is the dread of winter.",
-				v6:"I am full of anger,",
-				v7:"I am full of negative emotion,",
+				v6:"I am full of anger at you,",
+				v7:"I am full of sadness without you,",
 				v8:"but ultimately, in the end,",
-				v9:"I am devastated, because I do not understand",
-				v10:"why you are no longer here."
+				v9:"I am devastated, because I don't understand",
+				v10:"why you're no longer here."
 			};
 
 			//stanza 4
@@ -49,11 +55,9 @@ $(function(){
 				v2:"no matter the time",
 				v3:"no matter the place",
 				v4:"in my heart for you there is always a space",
-				v5:"and in my memories I leave you flowers",
-				v6:"all I can say is that I wish for you the best",
+				v5:"in my memories I give my farewell",
+				v6:"All I can say is that I wish for you the best",
 				v7:"and one day I hope to be with you again",
-				v8:"...",
-				v9:"RIP",
 			};
 
 			//**************************************************************
@@ -114,11 +118,8 @@ $(function(){
 			write($("#s4v5"),s4.v5);
 			write($("#s4v6"),s4.v6);
 			write($("#s4v7"),s4.v7);
-			write($("#s4v8"),s4.v8);
-			write($("#s4v9"),s4.v9);
 
 			//calling alias
-			alias("...but...", "text text");
 			alias(s1.v1, s1.v1c);
 			alias(s1.v2, s1.v2c);
 			alias(s1.v3, s1.v3c);
@@ -127,6 +128,5 @@ $(function(){
 			alias(s1.v6, s1.v6c);
 			alias(s1.v7, s1.v7c);
 
-
-			//
+			//end
 		});
