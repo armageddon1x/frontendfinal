@@ -1,0 +1,28 @@
+//presets
+*{margin:0;padding:0;}
+
+.abs{position: absolute;}
+.rel{position: relative;}
+
+//class for poem style
+.poem{
+	color: rgb(200,200,200);
+	font-family:Tangerine;
+	font-size: 70px;
+	z-index: 40;
+	background:rgba(0,0,0,.7);
+	padding:15px 120px;
+	// width:80%;
+}
+.poem:hover{cursor:pointer;}
+
+//class for poem verse container
+.words{
+	height:100%;
+	z-index:100;
+}
+
+#stanza1{top:-500vh;}
+#stanza2{top:0vh}
+#stanza3{top:0vh}
+#stanza4{top:0vh}

@@ -10,26 +10,33 @@
 </head>
 <body>
 	<div id="wrap">
-
 		<!-- start -->
 		<div id="beginning">
+			<!-- start -->
+			<!-- counter -->
 			<div id="info">0</div>
-			<div id="title" class="rel"
-			data-0="opacity:1;"
-			data-260="opacity:0;"
-			>
-				Nebula<hr></div>
-				<img class="abs" src="pics/space/comet.png" style="width:20%;top:70%"
 
-					data-bottom-top="transform:translateX(-500%);"
-					data-top-bottom="transform:translateX(700%);"
-									>
+			<!-- title -->
+			<div id="title" class="rel"
+				data-0="opacity:1;"
+				data-260="opacity:0;"
+			>
+				Nebula<hr>
+			</div>
+			
+			<!-- comet -->
+			<img id="comet" class="abs" src="pics/space/comet.png"
+				data-bottom-top="transform:translateX(-500%);"
+				data-top-bottom="transform:translateX(700%);"
+			>
+			<!-- end -->
 		</div>
 
 		<!-- space -->
 		<div id="space">
 			<!-- starfield -->
 			<div id="starfield" class="rel">
+				<!-- stars -->
 				<img src="pics/space/star_effect.png" class="rel stars"
 					data-bottom-top="top: 200vh;"
 					data-top-bottom="top: -100vh;"
@@ -38,191 +45,263 @@
 					data-bottom-top="top: 0vh;"
 					data-top-bottom="top: -300vh;"
 				>
-				<img class="abs" src="pics/space/field.png" style="width:120%;top:350vh;"
+				
+				<!-- field -->
+				<img  id="field" class="abs" src="pics/space/field.png"
 					data-bottom-top="transform:translateX(-100%) translateY(100%);"
 					data-top-bottom="transform:translateX(100%) translateY(-100%);"
 				>
 			</div>
-			<div class="rel words" style="top:-500vh;">
+
+			<!-- poem -->
+			<div  id="stanza1" class="rel words">
 				<!-- text -->
-			<p class="abs poem" id="s1v1"
-				data-bottom-top="opacity:.4;"
-				data-center-top="opacity:1;"
-				data-top-top="opacity:.4;"
+				<p class="abs poem" id="s1v1"
+					data-bottom-top="opacity:.4;"
+					data-center-top="opacity:1;"
+					data-top-top="opacity:.4;"
+					></p><br>
+
+				<p class="abs poem" id="s1v2"
+					data-1400="opacity:1;filter:blur(0px);"
+					data-2000="opacity:0;filter:blur(10px);"
 				></p><br>
-			<p class="abs poem" id="s1v2"></p><br>
-			<p class="abs poem" id="s1v3"></p><br>
-			<p class="abs poem" id="s1v4"></p>
-			<p class="abs poem" id="s1v5"></p>
-			<p class="abs poem" id="s1v6"></p>
-			<p class="abs poem" id="s1v7"
-				data-center-top="opacity:0;"
-				data-top-top="opacity:1;"
-				data-top-bottom="opacity:0;"
+
+				<p class="abs poem" id="s1v3"
+					data-1500="opacity:1;filter:blur(0px);"
+					data-2100="opacity:0;filter:blur(10px);"
+				></p><br>
+
+				<p class="abs poem" id="s1v4"
+					data-1600="opacity:1;filter:blur(0px);"
+					data-2200="opacity:0;filter:blur(10px);"
+				></p>
+
+				<p class="abs poem" id="s1v5"></p>
+
+				<p class="abs poem" id="s1v6"></p>
+
+				<p class="abs poem" id="s1v7"
+					data-center-top="opacity:0;"
+					data-top-center="opacity:1;"
+					data-top-bottom="opacity:0;"
 				></p>
 			</div>
 		</div>
-
+		
+		<!-- sky -->
 		<div id="sky">
-			<div class="rel" style:"top:0vh;">
-					<img class="abs" src="pics/sky/sun.png"
-					style="z-index:200px;top:100vh;"
-						data-bottom-top="right:0%;transform:translateY(0vh);"
-						data-top-bottom="transform:translateY(-150vh);right:200%;"
-					>
-					<img class="abs" src="pics/sky/clouds.png"
-					style="width:100%;top:0vh;"
-						data-4000="top:200vh;transform:translateY(0vh);"
-						data-4900="transform:translateY(-150vh);"
-					>
+			<div class="rel">
+				<!-- sun -->
+				<img id="sun" class="abs" src="pics/sky/sun.png"
+					data-bottom-top="right:0%;transform:translateY(0vh);"
+					data-top-bottom="transform:translateY(-150vh);right:200%;"
+				>
 
-					<div class="abs" style="background:black;height:300vh;width:100%;top:100vh;display:flex;justify-content:center;align-items:center;"
-						data-5200="opacity:0;"
-						data-5450="opacity:1;"
-						data-5800="opacity:.7;"
-						data-5900="opacity:0;"
+				<!-- clouds -->
+				<img id="clouds" class="abs" src="pics/sky/clouds.png"
+					data-4100="top:250vh;transform:translateY(0vh);"
+					data-5100="transform:translateY(-200vh);"
+				>
+
+				<!-- night -->
+				<div id="night" class="abs"
+					data-5200="opacity:0;"
+					data-5450="opacity:1;"
+					data-5800="opacity:.7;"
+					data-5900="opacity:0;"
+				>
+					<!-- moon -->
+					<img id="moon" src="pics/sky/moon.png"
+						data-5450="filter:blur(0px);"
+						data-5900="filter:blur(10px)"
 					>
-						<img src="pics/sky/moon.png" style="width:50%;">
-					</div>
+				</div>
 					
-					<div class="abs"style="width:100%;height:200vh;top:150vh;z-index:500;"
-						data-0="opacity:0;"
-						data-6300="opacity:0;transform:translateY(0vh);"
-						data-6320="opacity:1;"
-						data-6450="transform:translateY(200vh);"
-						data-6570="transform:translateY(150vh);"
-						data-6600="transform:translateY(200vh);"
-						data-6700="transform:translateY(350vh);"
-						data-6800="opacity:0;"
-					>
-						<img class="abs" src="pics/sky/raindrops.png" style="width:100%;height:100%;">
-					</div>
+				<!-- rainrain -->
+				<div id="rainrain" class="abs"
+					data-0="opacity:0;"
+					data-6300="opacity:0;transform:translateY(0vh);"
+					data-6320="opacity:1;"
+					data-6450="transform:translateY(200vh);"
+					data-6570="transform:translateY(150vh);"
+					data-6600="transform:translateY(200vh);"
+					data-6700="transform:translateY(350vh);"
+					data-6800="opacity:0;"
+				>
+					<!-- raindrops -->
+					<img id="raindrops" class="abs" src="pics/sky/raindrops.png">
 
-					<div class="abs" id="rain" style="top:100vh;"
-						data-6000="transform:translateY(0vh);opacity:0;"
-						data-6300="opacity:1;transform:translateY(100vh);"
-						data-6800="transform:translateY(300vh);opacity:0;"
-						data-6800=""
-					>
-						
-					</div>
+				</div>
+
+				<!-- rain -->
+				<div class="abs" id="rain"
+					data-6000="transform:translateY(0vh);opacity:0;"
+					data-6300="opacity:1;transform:translateY(100vh);"
+					data-6800="transform:translateY(300vh);opacity:0;"
+					data-6800=""
+				></div>
 					
 			</div>
 
-			
-
-			<div class="rel words" style="top:0vh">
+			<!-- poem -->
+			<div id="stanza2" class="rel words">
 				<p class="abs poem" id="s2v1"
 					data-4200="opacity:1;"
 					data-4400="opacity:0;"
 				></p>
+
 				<p class="abs poem" id="s2v2"></p>
+
 				<p class="abs poem" id="s2v3"></p>
+
 				<p class="abs poem" id="s2v4"
 					data-center-center="opacity:1;"
 					data-top-bottom="opacity:0;"
 				></p>
+
 				<p class="abs poem" id="s2v5"
 					data-center-center="opacity:1;"
 					data-top-bottom="opacity:0;"
 				></p>
+
 				<p class="abs poem" id="s2v6"></p>
+
 				<p class="abs poem" id="s2v7"></p>
-				<p class="abs poem" id="s2v8"></p>
+
+				<p class="abs poem" id="s2v8"
+					data-6650="filter: blur(0px);"
+					data-7000="filter: blur(5px);"
+				></p>
 			</div>
 		</div>
 
 		<div id="lower_sky" class="rel"
-				data-8550="-webkit-filter: invert(0);filter: invert(0);"
-				data-8800="-webkit-filter: invert(1);filter: invert(1);"
-				data-9100="-webkit-filter: invert(0);filter: invert(0);"
+			data-8400="-webkit-filter: invert(0);filter: invert(0);"
+			data-8800="-webkit-filter: invert(1);filter: invert(1);"
+			data-9000="-webkit-filter: invert(0);filter: invert(0);"
 		>
-			<div class="rel" style="top:-5vh;">
-				<img class="abs" src="pics/you.png" style="height:80vh;"
+			<div id="us" class="rel">
+				<!-- you -->
+				<img id="you" class="abs" src="pics/you.png"
 					data-7300="transform:translateX(0vw);"
 					data-7600="transform:translateX(-60vw);"
 				>
-				<img class="abs" src="pics/me.png" style="height:80vh;right:0%;"
+				<!-- me -->
+				<img id="me" class="abs" src="pics/me.png"
 					data-7300="transform:translateX(0vw);"
 					data-7600="transform:translateX(60vw);"
 				>
 				
-				<img class="abs" src="pics/flowers.png" style="top:175vh;"
-				data-8550="-webkit-filter: invert(0);filter: invert(0);"
-				data-8800="-webkit-filter: invert(1);filter: invert(1);"
-				>
-
+				<!-- flowers -->
+				<img id="flowers" class="abs" src="pics/flowers.png">
 			</div>
-			<div class="rel words" style="top:0vh">
+	
+			<!-- poem -->
+			<div id="stanza3" class="rel words">
 				<p class="abs poem" id="s3v1"></p>
+
 				<p class="abs poem" id="s3v2"></p>
+
 				<p class="abs poem" id="s3v3"></p>
+
 				<p class="abs poem" id="s3v4"
-					data-8550="-webkit-filter: invert(0);filter: invert(0);"
-				data-8800="-webkit-filter: invert(1);filter: invert(1);"
+					data-8550="opacity:1;"
+					data-8600="opacity:0;"
 				></p>
+
 				<p class="abs poem" id="s3v5"
-					data-8550="-webkit-filter: invert(0);filter: invert(0);"
-				data-8800="-webkit-filter: invert(1);filter: invert(1);"
+					data-8550="opacity:0;"
+					data-8700="opacity:1;"
+					data-8800="opacity:1;"
+					data-8925="opacity:0;"
 				></p>
-				<p class="abs poem" id="s3v6"></p>
-				<p class="abs poem" id="s3v7"></p>
-				<p class="abs poem" id="s3v8"></p>
-				<p class="abs poem" id="s3v9"></p>
-				<p class="abs poem" id="s3v10"></p>
+
+				<p class="abs poem" id="s3v6"
+					data-9000="filter: blur(15px);"
+					data-9350="filter: blur(0px);opacity:1"
+					data-9550="opacity:0;"
+				></p>
+
+				<p class="abs poem" id="s3v7"
+					data-9000="filter: blur(15px);"
+					data-9600="filter: blur(0px);opacity:1"
+					data-9850="opacity:0;"
+				></p>
+
+				<p class="abs poem" id="s3v8"
+					data-9900="opacity:1;"
+					data-10100="opacity:0;"
+				></p>
+
+				<p class="abs poem" id="s3v9"
+					data-10100="opacity:1;"
+					data-10300="opacity:0;"
+				></p>
+
+				<p class="abs poem" id="s3v10"
+					data-10300="opacity:0;"
+					data-10500="opacity:1;"
+					data-10600="filter:blur(0px);"
+					data-11000="filter:blur(50px);"
+				></p>
 			</div>
 		</div>
 
 		<div id="lowest_sky">
 
-			<div class="rel" style="top:0vh;">
-				<img class="abs" src="pics/heart1.png" style="height:100vh;top:200vh;"
+			<div id="stanza4" class="rel">
+				<img id="heart1" class="abs" src="pics/heart1.png"
 					data-11900="transform:translateX(-50vw);"
-					data-12200="transform:translateX(25vw);"
+					data-12150="transform:translateX(25vw);"
 				>
-				<img class="abs" src="pics/heart2.png" style="height:100vh;top:200vh;"
+				<img id="heart2"class="abs" src="pics/heart2.png"
 				data-11900="transform:translateX(100vw);"
-					data-12200="transform:translateX(25vw);"
+					data-12150="transform:translateX(25vw);"
 				>
 			</div>
 
-			<div class="rel words" style="top:0vh">
+			<div id="stanza4" class="rel words">
 				<p class="abs poem" id="s4v1"></p>
-				<p class="abs poem" id="s4v2"></p>
-				<p class="abs poem" id="s4v3"></p>
+
+				<p class="abs poem" id="s4v2"
+					data-11500="transform:translateX(0vw);"
+					data-11800="transform:translateX(-100vw);"
+				></p>
+
+				<p class="abs poem" id="s4v3"
+					data-11500="transform:translateX(0vw);"
+					data-11800="transform:translateX(100vw);"
+				></p>
+
 				<p class="abs poem" id="s4v4"></p>
+
 				<p class="abs poem" id="s4v5"></p>
+
 				<p class="abs poem" id="s4v6"></p>
-				<p class="abs poem" id="s4v7"></p>
+
+				<p class="abs poem" id="s4v7"
+					data-13600="filter: blur(10px);"
+					data-14000="filter: blur(0px);"
+				></p>
+
 				<hr>
 			</div>
 		</div>
 
 		<div id="ground">
-
-			<div class="rel" id="tombstone" style="height:100%;width:100%;text-align:center;"
-			>
-				<img class="abs" style="width:30%;bottom:0;left:40%;"src="pics/ground/tombstone.png"
-				data-14600="transform:translateY(50vh);"
-				data-14900="transform:translateY(0vh);"
+			<!-- tombstone -->
+			<div id="tombstone" class="rel">
+				<!-- actual tombstone img -->
+				<img id="tm" class="abs" src="pics/ground/tombstone.png"
+					data-14600="transform:translateY(50vh);"
+					data-14900="transform:translateY(0vh);"
 				>
 			</div>
 		</div>
-
 		<!-- end -->
 	</div>
 
 	<script src="js/skrollr.js"></script>
-	<script>
-			$(function(){
-				var s = skrollr.init({
-				render: function(data) {
-				  //Log the current scroll position.
-				  $('#info').text(data.curTop);
-					}
-				});
-			})
-	</script>
-	
 </body>
 </html>

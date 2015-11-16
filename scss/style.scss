@@ -2,6 +2,7 @@
 
 //import
 @import 'lyrics';
+@import 'poem';
 
 //mixins
 @mixin gradient($color1,$color2){
@@ -14,12 +15,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
 }
 
-*{margin:0;padding:0;}
-
-//positions
-.abs{position: absolute;}
-.rel{position: relative;}
-
+//counter
 #info {
   position: fixed;
   top: 20px;
@@ -30,32 +26,10 @@
   z-index: 9999;
 }
 
-//class for poem style
-.poem{
-	color: rgb(200,200,200);
-	font-family:Tangerine,sans-serif;
-	// font-size:100px;
-	z-index: 40;
-	background:rgba(0,0,0,.7);
-	padding:15px 40px;
-	// border:1px solid white;
-	width:80%;
-}
-.poem:hover{cursor:pointer;}
-
-
-
-//class for poem verse container
-.words{
-	height:100%;
-	z-index:100;
-}
-
 //heading
 #beginning{
 	height:100vh;
 	background: black;
-
 	//title
 	#title{
 		color: rgb(200,200,200);
@@ -71,8 +45,12 @@
 		border-top:2px solid rgb(200,200,200);
 		width: 50%;
 	}
+	#comet{
+		width:20%;top:70%
+	}
 }
 
+//first section
 #space{
 	height:500vh;
 	@include gradient(#000000, #1a1a1a);
@@ -93,26 +71,51 @@
 		width:100%;
 		z-index: 20;
 	}
+	#field{
+		width:120%;top:350vh;
+	}
 }
 
+//second section
 #sky{
 	height:500vh;
 	z-index:20;
+	top:0vh;
 	@include gradient(#1a1a1a, #002e57);
 
 	#rain{
 		background-image:url(../pics/sky/rain.png);
 		height:300vh;
 		width:100%;
-		top:250vh;
+		top:100vh;
 	}
+	#sun{z-index:200px;top:125vh;}
+	#clouds{width:90%;top:50vh;}
+	#night{
+		background:black;
+		height:300vh;
+		width:100%;
+		top:100vh;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	#moon{width:40%;top:20%;}
+	#rainrain{width:100%;height:200vh;top:150vh;z-index:500;}
+	#raindrops{width:100%;height:100%;}
 }
 
+//third section
 #lower_sky{
 	height:500vh;
 	@include gradient(#002e57, #0088ff);
+	#us{top:-5vh;}
+	#you{height:80vh;}
+	#me{height:80vh;right:0%;}
+	#flowers{top:175vh;}
 }
 
+//fourth section
 #lowest_sky{
 	height:600vh;
 	@include gradient(#0088ff, #99cfff);
@@ -125,9 +128,14 @@
 		position:relative;
 		top:95%;
 	}
+	#heart1{height:90vh;top:200vh;}
+	#heart2{height:90vh;top:200vh;}
 }
 
+//final section
 #ground{
 	height:100vh;
 	@include gradient(#99cfff, #08E80B);
+	#tombstone{height:100%;width:100%;text-align:center;}
+	#tm{width:30%;bottom:0;left:40%;}
 }

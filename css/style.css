@@ -36,10 +36,10 @@
   top: 30%; }
 
 #s2v4 {
-  top: 50%; }
+  top: 47%; }
 
 #s2v5 {
-  top: 55%; }
+  top: 52%; }
 
 #s2v6 {
   top: 70%; }
@@ -54,7 +54,8 @@
   top: 15%; }
 
 #s3v2 {
-  top: 20%; }
+  top: 20%;
+  right: 0; }
 
 #s3v3 {
   top: 25%; }
@@ -72,25 +73,30 @@
   top: 70%; }
 
 #s3v8 {
-  top: 85%; }
+  top: 80%; }
 
 #s3v9 {
-  top: 90%; }
+  top: 85%; }
 
 #s3v10 {
-  top: 95%; }
+  top: 100%;
+  left: 25%;
+  text-align: center; }
 
 #s4v1 {
   top: 15%; }
 
 #s4v2 {
-  top: 25%; }
+  top: 25%;
+  right: 0;
+  text-align: right; }
 
 #s4v3 {
   top: 30%; }
 
 #s4v4 {
-  top: 50%; }
+  top: 50%;
+  right: 0; }
 
 #s4v5 {
   top: 55%; }
@@ -99,7 +105,9 @@
   top: 70%; }
 
 #s4v7 {
-  top: 85%; }
+  top: 85%;
+  left: 20%;
+  text-align: center; }
 
 * {
   margin: 0;
@@ -111,6 +119,33 @@
 .rel {
   position: relative; }
 
+.poem {
+  color: #c8c8c8;
+  font-family: Tangerine;
+  font-size: 70px;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 120px; }
+
+.poem:hover {
+  cursor: pointer; }
+
+.words {
+  height: 100%;
+  z-index: 100; }
+
+#stanza1 {
+  top: -500vh; }
+
+#stanza2 {
+  top: 0vh; }
+
+#stanza3 {
+  top: 0vh; }
+
+#stanza4 {
+  top: 0vh; }
+
 #info {
   position: fixed;
   top: 20px;
@@ -119,21 +154,6 @@
   color: #fff;
   padding: 20px;
   z-index: 9999; }
-
-.poem {
-  color: #c8c8c8;
-  font-family: Tangerine,sans-serif;
-  z-index: 40;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 40px;
-  width: 80%; }
-
-.poem:hover {
-  cursor: pointer; }
-
-.words {
-  height: 100%;
-  z-index: 100; }
 
 #beginning {
   height: 100vh;
@@ -150,6 +170,9 @@
     border: 0;
     border-top: 2px solid #c8c8c8;
     width: 50%; }
+  #beginning #comet {
+    width: 20%;
+    top: 70%; }
 
 #space {
   height: 500vh;
@@ -171,10 +194,14 @@
   #space .stars {
     width: 100%;
     z-index: 20; }
+  #space #field {
+    width: 120%;
+    top: 350vh; }
 
 #sky {
   height: 500vh;
   z-index: 20;
+  top: 0vh;
   background: -moz-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #1a1a1a), color-stop(100%, #002e57));
   background: -webkit-linear-gradient(top, #1a1a1a 0%, #002e57 100%);
@@ -186,7 +213,32 @@
     background-image: url(../pics/sky/rain.png);
     height: 300vh;
     width: 100%;
-    top: 250vh; }
+    top: 100vh; }
+  #sky #sun {
+    z-index: 200px;
+    top: 125vh; }
+  #sky #clouds {
+    width: 90%;
+    top: 50vh; }
+  #sky #night {
+    background: black;
+    height: 300vh;
+    width: 100%;
+    top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #sky #moon {
+    width: 40%;
+    top: 20%; }
+  #sky #rainrain {
+    width: 100%;
+    height: 200vh;
+    top: 150vh;
+    z-index: 500; }
+  #sky #raindrops {
+    width: 100%;
+    height: 100%; }
 
 #lower_sky {
   height: 500vh;
@@ -197,6 +249,15 @@
   background: -ms-linear-gradient(top, #002e57 0%, #0088ff 100%);
   background: linear-gradient(to bottom, #002e57 0%, #0088ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }
+  #lower_sky #us {
+    top: -5vh; }
+  #lower_sky #you {
+    height: 80vh; }
+  #lower_sky #me {
+    height: 80vh;
+    right: 0%; }
+  #lower_sky #flowers {
+    top: 175vh; }
 
 #lowest_sky {
   height: 600vh;
@@ -214,6 +275,12 @@
     width: 40%;
     position: relative;
     top: 95%; }
+  #lowest_sky #heart1 {
+    height: 90vh;
+    top: 200vh; }
+  #lowest_sky #heart2 {
+    height: 90vh;
+    top: 200vh; }
 
 #ground {
   height: 100vh;
@@ -224,3 +291,11 @@
   background: -ms-linear-gradient(top, #99cfff 0%, #08E80B 100%);
   background: linear-gradient(to bottom, #99cfff 0%, #08E80B 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 ); }
+  #ground #tombstone {
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+  #ground #tm {
+    width: 30%;
+    bottom: 0;
+    left: 40%; }
