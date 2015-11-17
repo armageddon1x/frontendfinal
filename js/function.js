@@ -44,39 +44,88 @@ $(function(){
 	//stanza 2
 	var s2={
 		v1:"When you left, it felt like the world ended.",
-		//v1c:""
+		v1c:"Cuando te fuiste, se sintio como el mundo se acabo.",
+
 		v2:"Even though the sun still rose,",
+		v2c:"Aunque el sol todavia salio,",
+
 		v3:"and the clouds still flowed,",
+		v3c:"y las nubes todavia fluia,",
+
 		v4:"the truth is that",
-		v5:"in my heart it was dark as the night",
+		v4c:"la verdad es que",
+
+		v5:"in my heart it was dark as the night.",
+		v5c:"en mi corazon era oscuro como la noche.",
+
 		v6:"The truth is that",
+		v6c:"La verdad es que",
+
 		v7:"the sky was filled with rain,",
-		v8:"as if the sky was crying with me"
+		v7c:"el cielo estaba lleno con lluvia,",
+
+		v8:"as if the sky was crying with me.",
+		v18c:"como si el cielo lloraba con migo."
+
 	};
 
 	//stanza 3
 	var s3={
 		v1:"How could you leave?",
-		v2:"We were so happy but now…",
+		v1c:"Como te pudiste ir?",
+
+		v2:"We were so happy but now...",
+		v2c:"Eramos tan felices pero ahora...",
+
 		v3:"there is only sadness.",
+		v3c:"no mas hay tristesa.",
+
 		v4:"The springtime flowers are in full bloom",
-		v5:"yet all I can see is the dread of winter.",
+		v4c:"Las flores de primavera estan en florecida",
+
+		v5:"yet all I can see is the withering winter.",
+		v5c:"pero todo lo que veo es el invierno fulminante.",
+
 		v6:"I am full of anger at you,",
+		v6c:"Estoy lleno de ira a ti,",
+
 		v7:"I am full of sadness without you,",
+		v17c:"estoy lleno de tristesa sin ti,",
+
 		v8:"but in the end,",
+		v8c:"pero al fin,",
+
 		v9:"I am devastated, because I don't understand",
-		v10:"why you're no longer here."
+		v9c:"estoy devastado, porque no entiendo",
+
+		v10:"why you're no longer here.",
+		v10c:"porque no estas con migo."
+
 	};
 
 	//stanza 4
 	var s4={
 		v1:"But I still love you, now and forever...",
+		v2c:"Pero todavia te amo, hoy y siempre...",
+
 		v2:"no matter the time,",
+		v2c:"no importa el tiempo,",
+
 		v3:"no matter the place.",
+		v3c:"ni importa el lugar.",
+
 		v4:"In my heart for you there is always a space.",
+		v4c:"En mi corazon para ti siempre hay un espacio.",
+
 		v5:"In my memories I give my farewell.",
+		v5c:"En mis memorias doy mi despedida.",
+
 		v6:"I wish the best for you,",
-		v7:"and one day I'll be next to you again",
+		v6c:"Te deseo lo mejor,",
+
+		v7:"and one day I'll be next to you again.",
+		v7c:"y un dia otra vez estare junto a ti.",
+
 	};
 
 	//**************************************************************

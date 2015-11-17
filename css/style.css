@@ -17,12 +17,12 @@
   top: 70%; }
 
 #s1v6 {
-  top: 77%;
+  top: 73%;
   right: 0; }
 
 #s1v7 {
-  top: 90%;
-  left: 5%;
+  top: 95%;
+  left: 40%;
   text-align: center; }
 
 #s2v1 {
@@ -145,15 +145,6 @@
 
 #stanza4 {
   top: 0vh; }
-
-#info {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  z-index: 9999; }
 
 #beginning {
   height: 100vh;
@@ -281,6 +272,18 @@
   #lowest_sky #heart2 {
     height: 90vh;
     top: 200vh; }
+  #lowest_sky #angel1 {
+    height: 50vh;
+    top: 350vh; }
+  #lowest_sky #angel2 {
+    height: 50vh;
+    top: 350vh;
+    right: 0; }
+  #lowest_sky #rose {
+    height: 40vh;
+    top: 400vh;
+    left: 45%;
+    z-index: 500; }
 
 #ground {
   height: 100vh;
